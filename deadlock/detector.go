@@ -4,7 +4,7 @@
 package deadlock
 
 import (
-	"github.com/y-taka-23/ddsv-go/deadlock/rule"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule"
 )
 
 // Detector searches the state space of given system

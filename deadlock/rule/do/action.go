@@ -4,7 +4,7 @@ package do
 import (
 	"fmt"
 
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/vars"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/vars"
 )
 
 // Action changes the values of shared variables.

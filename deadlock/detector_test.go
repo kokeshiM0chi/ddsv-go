@@ -3,10 +3,10 @@ package deadlock_test
 import (
 	"testing"
 
-	"github.com/y-taka-23/ddsv-go/deadlock"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/do"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/vars"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/do"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/vars"
 )
 
 func TestDetect(t *testing.T) {

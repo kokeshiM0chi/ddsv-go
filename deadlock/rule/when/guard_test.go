@@ -3,8 +3,8 @@ package when_test
 import (
 	"testing"
 
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/vars"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/when"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/vars"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/when"
 )
 
 func TestIs(t *testing.T) {

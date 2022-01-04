@@ -7,8 +7,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/y-taka-23/ddsv-go/deadlock/rule"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/vars"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/vars"
 )
 
 type StateId string

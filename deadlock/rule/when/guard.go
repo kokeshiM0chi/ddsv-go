@@ -4,7 +4,7 @@ package when
 import (
 	"fmt"
 
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/vars"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/vars"
 )
 
 // Guard determines whether a transition is fireable

@@ -1,3 +1,3 @@
-module github.com/y-taka-23/ddsv-go
+module github.com/kokeshiM0chi/ddsv-go
 
-go 1.13
+go 1.15

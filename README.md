@@ -1,8 +1,8 @@
 Toy Deadlock Detector
 =====================
 
-[![GoDoc](https://godoc.org/github.com/y-taka-23/ddsv-go/deadlock?status.svg)](https://godoc.org/github.com/y-taka-23/ddsv-go/deadlock)
-[![CircleCI](https://circleci.com/gh/y-taka-23/ddsv-go.svg?style=svg)](https://circleci.com/gh/y-taka-23/ddsv-go)
+[![GoDoc](https://godoc.org/github.com/kokeshiM0chi/ddsv-go/deadlock?status.svg)](https://godoc.org/github.com/kokeshiM0chi/ddsv-go/deadlock)
+[![CircleCI](https://circleci.com/gh/kokeshiM0chi/ddsv-go.svg?style=svg)](https://circleci.com/gh/kokeshiM0chi/ddsv-go)
 
 This package aims to provide a DSL to represent processes as [finite state machines](https://en.wikipedia.org/wiki/Finite-state_machine) and their concurrent composition. A detector traverses all possible states of the concurrent system, and reports on deadlocks, namely states in which no process can take the next step. Also, the package provides [Graphviz](https://www.graphviz.org/) style outputs, so you can intuitively view the state space of your system.
 
@@ -35,11 +35,11 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/y-taka-23/ddsv-go/deadlock"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/do"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/vars"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/when"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/do"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/vars"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/when"
 )
 
 func main() {

@@ -2,9 +2,9 @@
 package rule
 
 import (
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/do"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/vars"
-	"github.com/y-taka-23/ddsv-go/deadlock/rule/when"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/do"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/vars"
+	"github.com/kokeshiM0chi/ddsv-go/deadlock/rule/when"
 )
 
 // Location represents the program counter of each process.
