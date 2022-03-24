@@ -29,7 +29,17 @@ rule構造体
 
 ### rule/when/Guard.goの中身
 Guard
-与えられた共有変数を実行可能かどうか判定する関数
+与えられた共有変数を遷移可能かどうか判定する関数
+
+未定義の変数の場合はエラーを返す
+
+
+### 備考
+生成したdotファイルを画像出力
+https://github.com/kokeshiM0chi/sample-distributed-system/tree/master/sample-graphviz
+
+
+
 
 
 

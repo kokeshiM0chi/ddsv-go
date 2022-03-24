@@ -1,0 +1,58 @@
+digraph {
+  "92fe2bd8cadfc8b96e07476c0a292eb8709325df" [label="C @ 3, P @ 0\nmut = 0, over = 0, que = 1, under = 0"]
+  "8a9e9d21a1b41c63a9b763a6f33e242c610cc02b" [label="C @ 3, P @ 1\nmut = 1, over = 0, que = 1, under = 0"]
+  "9d6a968a066e49b5cd970802aa59d32a7579a365" [label="C @ 1, P @ 0\nmut = 1, over = 0, que = 0, under = 0"]
+  "30d1f3334d548574b1b76b0f022402f4431e99e1" [label="C @ 3, P @ 0\nmut = 0, over = 0, que = 0, under = 1"]
+  "16039f7477eca0195f31d03034074667fc566038" [label="C @ 0, P @ 5\nmut = 1, over = 0, que = 1, under = 0"]
+  "d2667a6a1f94a0c20403d635d57c4af485928ec4" [label="C @ 3, P @ 1\nmut = 1, over = 0, que = 0, under = 1"]
+  "6e33b148b262156896d8efdede0f6bc1b59d5f84" [label="C @ 1, P @ 0\nmut = 1, over = 0, que = 1, under = 0"]
+  "cdaedbddf4804093952bca5ac6d323414f14c05a" [label="C @ 3, P @ 5\nmut = 1, over = 0, que = 1, under = 0"]
+  "985fa7e49f835b6438a7118c3f31c378148959bd" [label="C @ 0, P @ 3\nmut = 0, over = 1, que = 1, under = 0"]
+  "e4f7a06e2b1d92790e95f8a7e90d9a8312a8f497" [label="C @ 1, P @ 3\nmut = 1, over = 1, que = 1, under = 0"]
+  "98639ee309505c9606c21876f87beace22e99c81" [label="C @ 0, P @ 1\nmut = 1, over = 0, que = 0, under = 0"]
+  "f2815c28d5be204583fdd8a3a4985ddd2072471f" [label="C @ 0, P @ 4\nmut = 1, over = 0, que = 1, under = 0"]
+  "0d4aa1dcae0844e37a5dcc2f91de0bae85d939d6" [label="C @ 3, P @ 4\nmut = 1, over = 0, que = 1, under = 1"]
+  "5b0ce4148168d18d4a8ea4e0c57af795d16bacbb" [label="C @ 0, P @ 1\nmut = 1, over = 0, que = 1, under = 0"]
+  "ca177539009b38893486ba98a6631bfbd80bef0d" [label="C @ 3, P @ 3\nmut = 0, over = 1, que = 1, under = 0"]
+  "026ce91a3f787996adc189865581ca4cc8b04438" [label="C @ 0, P @ 0\nmut = 0, over = 0, que = 0, under = 0", fillcolor="#AAFFFF", style="solid,filled"];
+  "42c6bb6c10970ff1493ab368dcaf971c6212c2ab" [label="C @ 5, P @ 0\nmut = 1, over = 0, que = 0, under = 0"]
+  "5091b93d4c9da3c999d37e334a8667cd036a2874" [label="C @ 5, P @ 3\nmut = 1, over = 0, que = 0, under = 0"]
+  "71c855ca36c5fd9662034bc06369bc7cc24faa02" [label="C @ 3, P @ 3\nmut = 0, over = 0, que = 0, under = 1"]
+  "0189bde680e1ccbe8891dcc6052eeb09b9ad8bb8" [label="C @ 1, P @ 3\nmut = 1, over = 0, que = 0, under = 0"]
+  "2d883d566c040c349ba5a91638fcde08f72dbaa8" [label="C @ 0, P @ 0\nmut = 0, over = 0, que = 1, under = 0"]
+  "6231517c41a9114d5f82f6ee570fe66cdca4c2d0" [label="C @ 4, P @ 0\nmut = 1, over = 0, que = 0, under = 0"]
+  "e3451fc2418f928f1ec5c562b2bc0eb7804470b8" [label="C @ 4, P @ 3\nmut = 1, over = 1, que = 0, under = 0"]
+  "57de88bf4fff2b58f8683450f4f522fa7a479583" [label="C @ 0, P @ 3\nmut = 0, over = 0, que = 0, under = 0"]
+  "026ce91a3f787996adc189865581ca4cc8b04438" -> "98639ee309505c9606c21876f87beace22e99c81" [label="P.lock"];
+  "92fe2bd8cadfc8b96e07476c0a292eb8709325df" -> "8a9e9d21a1b41c63a9b763a6f33e242c610cc02b" [label="P.lock"];
+  "ca177539009b38893486ba98a6631bfbd80bef0d" -> "985fa7e49f835b6438a7118c3f31c378148959bd" [label="C.wakeup"];
+  "57de88bf4fff2b58f8683450f4f522fa7a479583" -> "0189bde680e1ccbe8891dcc6052eeb09b9ad8bb8" [label="C.lock"];
+  "0189bde680e1ccbe8891dcc6052eeb09b9ad8bb8" -> "71c855ca36c5fd9662034bc06369bc7cc24faa02" [label="C.wait"];
+  "71c855ca36c5fd9662034bc06369bc7cc24faa02" -> "30d1f3334d548574b1b76b0f022402f4431e99e1" [label="P.wakeup"];
+  "d2667a6a1f94a0c20403d635d57c4af485928ec4" -> "0d4aa1dcae0844e37a5dcc2f91de0bae85d939d6" [label="P.produce"];
+  "e4f7a06e2b1d92790e95f8a7e90d9a8312a8f497" -> "e3451fc2418f928f1ec5c562b2bc0eb7804470b8" [label="C.consume"];
+  "30d1f3334d548574b1b76b0f022402f4431e99e1" -> "d2667a6a1f94a0c20403d635d57c4af485928ec4" [label="P.lock"];
+  "2d883d566c040c349ba5a91638fcde08f72dbaa8" -> "6e33b148b262156896d8efdede0f6bc1b59d5f84" [label="C.lock"];
+  "cdaedbddf4804093952bca5ac6d323414f14c05a" -> "92fe2bd8cadfc8b96e07476c0a292eb8709325df" [label="P.unlock"];
+  "cdaedbddf4804093952bca5ac6d323414f14c05a" -> "16039f7477eca0195f31d03034074667fc566038" [label="C.wakeup"];
+  "92fe2bd8cadfc8b96e07476c0a292eb8709325df" -> "2d883d566c040c349ba5a91638fcde08f72dbaa8" [label="C.wakeup"];
+  "5b0ce4148168d18d4a8ea4e0c57af795d16bacbb" -> "985fa7e49f835b6438a7118c3f31c378148959bd" [label="P.wait"];
+  "985fa7e49f835b6438a7118c3f31c378148959bd" -> "e4f7a06e2b1d92790e95f8a7e90d9a8312a8f497" [label="C.lock"];
+  "8a9e9d21a1b41c63a9b763a6f33e242c610cc02b" -> "5b0ce4148168d18d4a8ea4e0c57af795d16bacbb" [label="C.wakeup"];
+  "e3451fc2418f928f1ec5c562b2bc0eb7804470b8" -> "5091b93d4c9da3c999d37e334a8667cd036a2874" [label="C.signal"];
+  "5091b93d4c9da3c999d37e334a8667cd036a2874" -> "57de88bf4fff2b58f8683450f4f522fa7a479583" [label="C.unlock"];
+  "16039f7477eca0195f31d03034074667fc566038" -> "2d883d566c040c349ba5a91638fcde08f72dbaa8" [label="P.unlock"];
+  "42c6bb6c10970ff1493ab368dcaf971c6212c2ab" -> "026ce91a3f787996adc189865581ca4cc8b04438" [label="C.unlock"];
+  "8a9e9d21a1b41c63a9b763a6f33e242c610cc02b" -> "ca177539009b38893486ba98a6631bfbd80bef0d" [label="P.wait"];
+  "57de88bf4fff2b58f8683450f4f522fa7a479583" -> "026ce91a3f787996adc189865581ca4cc8b04438" [label="P.wakeup"];
+  "0d4aa1dcae0844e37a5dcc2f91de0bae85d939d6" -> "cdaedbddf4804093952bca5ac6d323414f14c05a" [label="P.signal"];
+  "98639ee309505c9606c21876f87beace22e99c81" -> "f2815c28d5be204583fdd8a3a4985ddd2072471f" [label="P.produce"];
+  "6e33b148b262156896d8efdede0f6bc1b59d5f84" -> "6231517c41a9114d5f82f6ee570fe66cdca4c2d0" [label="C.consume"];
+  "0189bde680e1ccbe8891dcc6052eeb09b9ad8bb8" -> "9d6a968a066e49b5cd970802aa59d32a7579a365" [label="P.wakeup"];
+  "026ce91a3f787996adc189865581ca4cc8b04438" -> "9d6a968a066e49b5cd970802aa59d32a7579a365" [label="C.lock"];
+  "9d6a968a066e49b5cd970802aa59d32a7579a365" -> "30d1f3334d548574b1b76b0f022402f4431e99e1" [label="C.wait"];
+  "f2815c28d5be204583fdd8a3a4985ddd2072471f" -> "16039f7477eca0195f31d03034074667fc566038" [label="P.signal"];
+  "2d883d566c040c349ba5a91638fcde08f72dbaa8" -> "5b0ce4148168d18d4a8ea4e0c57af795d16bacbb" [label="P.lock"];
+  "6231517c41a9114d5f82f6ee570fe66cdca4c2d0" -> "42c6bb6c10970ff1493ab368dcaf971c6212c2ab" [label="C.signal"];
+  "5091b93d4c9da3c999d37e334a8667cd036a2874" -> "42c6bb6c10970ff1493ab368dcaf971c6212c2ab" [label="P.wakeup"];
+}

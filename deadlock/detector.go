@@ -32,6 +32,7 @@ func (d detector) Detect(s System) (Report, error) {
 
 	for len(queue) > 0 {
 		from := queue[0]
+		// pop
 		queue = queue[1:]
 
 		if _, ok := visited[from.Id()]; ok {

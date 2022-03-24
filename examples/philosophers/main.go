@@ -21,8 +21,8 @@ func main() {
 			Define(rule.At("1").Only(when.Var(right).Is(0)).
 				Let("up_r", do.Set(me).ToVar(right)).MoveTo("2")).
 			// comment in the lines to avoid deadlocks
-			//Define(rule.At("1").Only(when.Var(right).IsNot(0)).
-			//	Let("down_l", do.Set(0).ToVar(left)).MoveTo("0")).
+			// Define(rule.At("1").Only(when.Var(right).IsNot(0)).
+			// Let("down_l", do.Set(0).ToVar(left)).MoveTo("0")).
 			Define(rule.At("2").Only(when.Var(right).Is(me)).
 				Let("down_r", do.Set(0).ToVar(right)).MoveTo("3")).
 			Define(rule.At("3").Only(when.Var(left).Is(me)).

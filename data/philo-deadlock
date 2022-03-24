@@ -1,0 +1,27 @@
+digraph {
+  "e15e65d9eaaee21b8987e527b66d7d68df251fb5" [label="P1 @ 0, P2 @ 0\nf1 = 0, f2 = 0", fillcolor="#AAFFFF", style="solid,filled"];
+  "441dbc94f96fa5353f92e7f35a9da566469a2017" [label="P1 @ 1, P2 @ 0\nf1 = 1, f2 = 0"]
+  "22417e65d76f0da2427fd981aa1e24140fc9af08" [label="P1 @ 2, P2 @ 0\nf1 = 1, f2 = 1"]
+  "33145007e65510c5439cf7efcb7d8ddc9edcfbd4" [label="P1 @ 1, P2 @ 1\nf1 = 1, f2 = 2", fillcolor="#FFAAAA", style="solid,filled"];
+  "597ab513ec243708216383267d136442d6258bc4" [label="P1 @ 0, P2 @ 2\nf1 = 2, f2 = 2"]
+  "ebc5cdd3e1e561fba0cc9e3128483912f38db8e0" [label="P1 @ 3, P2 @ 0\nf1 = 1, f2 = 0"]
+  "44d5e5cc0dc291852892989e2b750b14c2e67a1f" [label="P1 @ 3, P2 @ 1\nf1 = 1, f2 = 2"]
+  "dd33ea48625c4d1b5f6b833c5c95d5d1fef96a32" [label="P1 @ 0, P2 @ 1\nf1 = 0, f2 = 2"]
+  "dbd3a39c2bc9248d3a098c9583abb9d21719ccc8" [label="P1 @ 0, P2 @ 3\nf1 = 0, f2 = 2"]
+  "d01af4be32c8cfda6c2e0c3b4a92b5751f3a2a38" [label="P1 @ 1, P2 @ 3\nf1 = 1, f2 = 2"]
+  "e15e65d9eaaee21b8987e527b66d7d68df251fb5" -> "441dbc94f96fa5353f92e7f35a9da566469a2017" [label="P1.up_l", color="#FF0000", fontcolor="#FF0000"];
+  "e15e65d9eaaee21b8987e527b66d7d68df251fb5" -> "dd33ea48625c4d1b5f6b833c5c95d5d1fef96a32" [label="P2.up_l"];
+  "ebc5cdd3e1e561fba0cc9e3128483912f38db8e0" -> "e15e65d9eaaee21b8987e527b66d7d68df251fb5" [label="P1.down_l"];
+  "597ab513ec243708216383267d136442d6258bc4" -> "dbd3a39c2bc9248d3a098c9583abb9d21719ccc8" [label="P2.down_r"];
+  "ebc5cdd3e1e561fba0cc9e3128483912f38db8e0" -> "44d5e5cc0dc291852892989e2b750b14c2e67a1f" [label="P2.up_l"];
+  "dbd3a39c2bc9248d3a098c9583abb9d21719ccc8" -> "e15e65d9eaaee21b8987e527b66d7d68df251fb5" [label="P2.down_l"];
+  "44d5e5cc0dc291852892989e2b750b14c2e67a1f" -> "dd33ea48625c4d1b5f6b833c5c95d5d1fef96a32" [label="P1.down_l"];
+  "441dbc94f96fa5353f92e7f35a9da566469a2017" -> "22417e65d76f0da2427fd981aa1e24140fc9af08" [label="P1.up_r"];
+  "441dbc94f96fa5353f92e7f35a9da566469a2017" -> "33145007e65510c5439cf7efcb7d8ddc9edcfbd4" [label="P2.up_l", color="#FF0000", fontcolor="#FF0000"];
+  "dd33ea48625c4d1b5f6b833c5c95d5d1fef96a32" -> "597ab513ec243708216383267d136442d6258bc4" [label="P2.up_r"];
+  "dbd3a39c2bc9248d3a098c9583abb9d21719ccc8" -> "d01af4be32c8cfda6c2e0c3b4a92b5751f3a2a38" [label="P1.up_l"];
+  "dd33ea48625c4d1b5f6b833c5c95d5d1fef96a32" -> "33145007e65510c5439cf7efcb7d8ddc9edcfbd4" [label="P1.up_l"];
+  "22417e65d76f0da2427fd981aa1e24140fc9af08" -> "ebc5cdd3e1e561fba0cc9e3128483912f38db8e0" [label="P1.down_r"];
+  "d01af4be32c8cfda6c2e0c3b4a92b5751f3a2a38" -> "441dbc94f96fa5353f92e7f35a9da566469a2017" [label="P2.down_l"];
+}
+
