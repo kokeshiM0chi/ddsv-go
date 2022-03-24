@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 
 	"github.com/kokeshiM0chi/ddsv-go/deadlock"
@@ -68,9 +69,12 @@ func main() {
 		fmt.Fprintln(os.Stderr, err)
 	}
 
-	_, err = deadlock.NewPrinter(os.Stdout).Print(report)
+	f, err := os.Create("./data/producer-consumer")
 	if err != nil {
-		fmt.Fprintln(os.Stderr, err)
+		log.Fatal(err)
 	}
+	defer f.Close()
+
+	_, err = deadlock.NewPrinter(f).Print(report)
 
 }
